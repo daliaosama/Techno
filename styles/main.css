@@ -1,46 +1,66 @@
 
 ul>li{
     display: inline;
-    
+    }
+    ul{
+        display: flex;
+        column-gap:5vh;
+        width:48vw;
+        justify-content: center;
+        color:orangered
     }
     nav{
         background-color: #51117F;
-        margin-left:3vw;
-        margin-right: 6vw;
-        
+    }
+    header{
+        height:50vh;
+    }
+    #tec{
+        display:flex;
+        width:96vw;
+       justify-content: center;
     }
 #techno{
     width:90vw;
     height:34vh;
-    margin-left:3vw;
 }
+
 a{
     text-decoration: none;
     color:white;
     font-weight: 600;
-    margin-left: 4vh;
+  
 }
-li:first-child a{
-    margin-left:30vh;
-}
+
 footer{
     background-color: #51117F;
     height:30vh;
-    margin-left:3vw;
-    margin-right: 6vw;
+    /* margin-left:3vw;
+    margin-right: 6vw; */
+    width:100%;
     color: white;
     font-weight: 600;
     padding: 20px;
 }
-
+.container-fluid{
+    display:flex;
+    width:90%;
+    column-gap: 2vh;
+   
+}
+.row{
+    display: flex;
+  
+}
+.card{
+    width: 15rem; height: 24rem
+}
    .col{
-    margin-left:-15vw;
-    margin-top:8vh;
-    margin-right: 12vw;
+    width:40vw;
+    display: flex;
+   justify-content: center;
    }
- .col:first-child{
-    margin-left: 10vw;
-  }
+ 
 #logo{
     width:5vw;
     height:6vh;
@@ -72,8 +92,13 @@ i{
     color: white;
     font-size: 25px;
 }
+#contactfoot{
+    display:flex;
+    width:25vw;
+    justify-content: center;
+}
 footer>i{
-    margin-left: 6vw;
+    /* margin-left: 6vw; */
     font-size: 20px;
 }
 .card{
@@ -95,4 +120,19 @@ button{
 }
 .card-img-top{
     height: 25vh;
+}
+@media only screen and (max-width: 600px) {
+   
+    nav{
+        width:90vw;
+        height:5vh;
+        display:flex;
+        justify-content: center;
+    }
+    .col{height:80vh;
+    width:50%}
+    .card{
+        height: 28rem;
+    }
+    
 }
